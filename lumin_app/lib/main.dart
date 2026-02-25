@@ -1,32 +1,22 @@
 import 'package:flutter/material.dart';
-import 'features/billing/domain/bill_prediction.dart';
+import 'package:lumin_application/Screens/login.dart';
+import 'package:lumin_application/Screens/splash/splash_page.dart';
+import 'theme/app_theme.dart';
 
 void main() {
-  final billPrediction = BillPrediction();
-
-  print('1000 kWh = ${billPrediction.predictMonthlyBill(1000)} SAR');
-  print('6000 kWh = ${billPrediction.predictMonthlyBill(6000)} SAR');
-  print('6500 kWh = ${billPrediction.predictMonthlyBill(6500)} SAR');
-
-  runApp(const LuminApp());
+  runApp(const MyApp());
 }
 
-class LuminApp extends StatelessWidget {
-  const LuminApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'LUMIN',
-      home: Scaffold(
-        body: Center(
-          child: Text(
-            'LUMIN App',
-            style: TextStyle(fontSize: 24),
-          ),
-        ),
-      ),
+      theme: AppTheme.darkTheme,
+      home: const SplashPage(),
+
     );
   }
 }

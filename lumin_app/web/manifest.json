@@ -1,6 +1,6 @@
 {
-    "name": "lumin_app",
-    "short_name": "lumin_app",
+    "name": "lumin_application",
+    "short_name": "lumin_application",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

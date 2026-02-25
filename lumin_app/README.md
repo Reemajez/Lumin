@@ -1,4 +1,4 @@
-# lumin_app
+# lumin_application
 
 A new Flutter project.
 
